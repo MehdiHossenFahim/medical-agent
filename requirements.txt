@@ -1,0 +1,23 @@
+# --- Core LLM / Agent frameworks ---
+# Verified working combo (as of this writing): openai-agents needs openai>=3.0,
+# and current langchain (1.x) needs langchain-classic for the legacy
+# AgentExecutor / create_tool_calling_agent APIs used in agent/langchain_app.py.
+openai>=3.0,<4
+openai-agents             # OpenAI Agents SDK (Agent, Runner, function_tool, OpenAIChatCompletionsModel)
+langchain
+langchain-classic          # provides AgentExecutor / create_tool_calling_agent on LangChain >= 1.0
+langchain-community        # provides SQLDatabaseToolkit / create_sql_agent
+langchain-openai           # only needed if LLM_PROVIDER=openai
+langchain-groq             # only needed if LLM_PROVIDER=groq
+
+# --- Web search tool ---
+tavily-python>=0.3.9
+
+# --- Data / DB handling ---
+pandas>=2.2.2
+numpy>=1.26.4
+sqlalchemy>=2.0.31
+
+# --- Utilities ---
+python-dotenv>=1.0.1
+tabulate>=0.9.0
