@@ -43,10 +43,6 @@ flowchart TB
     class WEB web
 ```
 
-## Try it on Colab:
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DNk250sMrrrB2nO8Ik-YQhBdpIz2YbVN?usp=sharing)
-
 ## 1. Project structure
 
 ```
@@ -211,7 +207,7 @@ Example routing:
 | "What are the risk factors for type 2 diabetes?"             | `MedicalWebSearchTool` |
 
 ## 6. Google Colab
-
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DNk250sMrrrB2nO8Ik-YQhBdpIz2YbVN?usp=sharing)
 A ready-to-run notebook is provided at `notebooks/Medical_Agent_Colab.ipynb`. It
 installs dependencies, lets you upload/generate the CSVs, builds the SQLite DBs, and
 runs the OpenAI Agents SDK agent — all in one notebook, no local setup required.
